@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "GitHub Failure Details Auto-Collapse",
+  "version": "1.0",
+  "description": "Auto-collapses failed GitHub Actions job sections.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/**/actions/runs/*/job/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
