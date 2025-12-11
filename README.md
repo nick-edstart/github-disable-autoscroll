@@ -3,6 +3,8 @@
 
 This Chrome extension improves the GitHub Actions run UI by automatically collapsing failed `<details>` sections *only when appropriate*, reducing annoying automatic scrolling and large DOM reflows.
 
+Issue thread: ([GitHub][1])
+
 ## 📁 Install
 
 1. Clone or download the repo
