@@ -20,7 +20,7 @@ const observer = new MutationObserver(mutations => {
         if (
             m.type === "attributes" &&
             m.attributeName === "open" &&
-            m.target.matches('details[data-conclusion="failure"]') &&
+            m.target.matches('details[data-conclusion="failure"], details[data-conclusion="null"]') &&
             !m.target.hasAttribute("manually-opened")
         ) {
             m.target.removeAttribute("open");
